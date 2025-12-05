@@ -1,3 +1,23 @@
+variable "cidr" {
+    type = string
+    default = "10.0.0.0/16"  
+}
+
+variable "public_subnet_cidr" {
+    type = list
+    #default = "10.3.2.0/24"  
+}
+
+variable "private_subnet_cidr" {
+    type = list
+    #default = "10.3.3.0/24"
+}
+
+variable "db_subnet_cidr" {
+    type = list
+    #default = "10.3.4.0/24"  
+}
+
 variable "tags" {
   description = "A map of tags to assign to resources"
   type        = map
