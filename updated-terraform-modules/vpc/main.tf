@@ -1,6 +1,8 @@
 #creating vpc
 resource "aws_vpc" "this2" {
   cidr_block = var.vpc_cidr
+  enable_dns_hostnames = true 
+  enable_dns_support = true
   tags       = merge(var.tags, var.vpc_tags)
 }
 

@@ -46,3 +46,17 @@ variable "database_subet_Names" {
   type = list 
   default = ["timing-database-2a", "timing-database-2b"]
 }
+
+variable "rds_security_group_name" {
+  type = string 
+  default = "timing"
+}
+
+variable "rds_security_group_description" {
+  type = string
+  default = "This security group is to attach timing RDS"
+}
+
+variable "ingress_with_cidr" {
+  default = []
+}
