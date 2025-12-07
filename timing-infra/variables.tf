@@ -60,3 +60,35 @@ variable "rds_security_group_description" {
 variable "ingress_with_cidr" {
   default = []
 }
+
+variable "allocated_storage" {
+  default = "10"
+}
+
+variable "db_name" {
+  default = "timing"
+}
+
+variable "db_identifier" {
+  default = "timing"
+}
+
+variable "engine" {
+  default = "postgres"
+}
+
+variable "engine_version" {
+  default = "17.6-R2"
+}
+
+variable "instance_class" {
+  default = "db.t4g.micro"
+}
+
+variable "rds_username" {
+  default = "timingadmin"
+}
+
+variable "secret_name" {
+  default = "timing/rds-password-value"
+}
